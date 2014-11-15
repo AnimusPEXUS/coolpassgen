@@ -1,5 +1,5 @@
 
-package coolpassgen;
+package org.wayround.coolpassgen;
 
 public class About {
 

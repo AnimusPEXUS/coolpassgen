@@ -1,5 +1,5 @@
 
-package coolpassgen;
+package org.wayround.coolpassgen;
 
 public class MainWindow {
 
@@ -15,7 +15,7 @@ public class MainWindow {
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
 
-    private coolpassgen.About about_window;
+    private org.wayround.coolpassgen.About about_window;
 
     String[][] Strengths = {
         {"Full Set",
@@ -46,7 +46,7 @@ public class MainWindow {
 
     public MainWindow() {
         this.window = new javax.swing.JFrame();
-        about_window = new coolpassgen.About();
+        this.about_window = new org.wayround.coolpassgen.About();
 
         this.initComponents();
 
@@ -56,7 +56,6 @@ public class MainWindow {
         }
         jComboBox1.addItem("Custom...");
         processPatternEditor();
-
     }
 
     private void initComponents() {
