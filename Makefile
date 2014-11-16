@@ -5,6 +5,8 @@ BUILD_FLAGS = -Xlint
 
 VERSION=1.3
 
+DESTINATION_JAR=./dist/CoolPassGen-$(VERSION).jar
+
 all: $(SOURCE_TARGETS)
 	javac $(BUILD_CP) $(BUILD_FLAGS) $(SRC_SUBPATH)/MainContent.java
 	javac $(BUILD_CP) $(BUILD_FLAGS) $(SRC_SUBPATH)/About.java
@@ -13,9 +15,13 @@ all: $(SOURCE_TARGETS)
 	javac $(BUILD_CP) $(BUILD_FLAGS) $(SRC_SUBPATH)/AppletRunnable.java
 	javac $(BUILD_CP) $(BUILD_FLAGS) $(SRC_SUBPATH)/MainApplet.java
 
-jar: all
+clean:
+	-rm $(SRC_SUBPATH)/*.class
+
+jar: clean all
 	-mkdir dist
-	jar -cfe ./dist/CoolPassGen-$(VERSION).jar \
+	-rm $(DESTINATION_JAR)
+	jar -cfe $(DESTINATION_JAR) \
 		org.wayround.coolpassgen.MainWindow \
 		org/ \
 		Makefile \
