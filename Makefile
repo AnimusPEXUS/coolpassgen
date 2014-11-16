@@ -15,7 +15,7 @@ all: $(SOURCE_TARGETS)
 
 jar: all
 	-mkdir dist
-	jar -cfe ./dist/coolpassgen-$(VERSION).jar \
+	jar -cfe ./dist/CoolPassGen-$(VERSION).jar \
 		org.wayround.coolpassgen.MainWindow \
 		org/ \
 		Makefile \
