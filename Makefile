@@ -1,13 +1,14 @@
-BUILD_CP = -cp .
+
 SRC_SUBPATH = ./org/wayround/coolpassgen
 
+BUILD_CP = -cp .
 BUILD_FLAGS = -Xlint
 
 VERSION=1.3
 
 DESTINATION_JAR=./dist/CoolPassGen-$(VERSION).jar
 
-all: $(SOURCE_TARGETS)
+all:
 	javac $(BUILD_CP) $(BUILD_FLAGS) $(SRC_SUBPATH)/MainContent.java
 	javac $(BUILD_CP) $(BUILD_FLAGS) $(SRC_SUBPATH)/About.java
 	javac $(BUILD_CP) $(BUILD_FLAGS) $(SRC_SUBPATH)/MainWindow.java
