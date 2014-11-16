@@ -20,7 +20,7 @@ jar: all
 		org/ \
 		Makefile \
 		COPYING
-		# applet.policy 
+		applet.policy 
 
 run: all
 	java $(BUILD_CP) org.wayround.coolpassgen.MainWindow
