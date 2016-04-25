@@ -125,7 +125,7 @@ public class MainContent {
             }
         });
 
-        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(12, 6, 256, 1));
+        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(20, 6, 256, 1));
 
         jLabel3.setText("Password Length");
 

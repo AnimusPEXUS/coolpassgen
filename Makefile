@@ -4,7 +4,7 @@ SRC_SUBPATH = ./org/wayround/coolpassgen
 BUILD_CP = -cp .
 BUILD_FLAGS = -Xlint
 
-VERSION=1.3
+VERSION=1.4
 
 DESTINATION_JAR=./dist/CoolPassGen-$(VERSION).jar
 
@@ -26,7 +26,7 @@ jar: clean all
 		org.wayround.coolpassgen.MainWindow \
 		org/ \
 		Makefile \
-		COPYING
+		COPYING \
 		applet.policy 
 
 run: all
