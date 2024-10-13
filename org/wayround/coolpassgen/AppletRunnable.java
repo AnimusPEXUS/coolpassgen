@@ -20,14 +20,14 @@ public class AppletRunnable implements Runnable {
             new javax.swing.BoxLayout(
                 cont_pane,
                 javax.swing.BoxLayout.Y_AXIS
-                )
-            );
+            )
+        );
 
         this.main_content =
             new org.wayround.coolpassgen.MainContent(
-                this.main_window
-                );
-                
+            this.main_window
+        );
+
         this.main_window.add(this.main_content.getWidget());
         // this.main_window.pack();
     }

@@ -17,5 +17,5 @@ file(
 add_jar(CoolPassGen
     SOURCES ${jar_files} COPYING applet.policy CMakeLists.txt
     ENTRY_POINT org.wayround.coolpassgen.MainWindow
-    VERSION 1.5.2
+    VERSION 1.5.3
     )

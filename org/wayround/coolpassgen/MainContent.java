@@ -3,7 +3,7 @@ package org.wayround.coolpassgen;
 
 public class MainContent {
 
-     private java.awt.Component main_window;
+    private java.awt.Component main_window;
 
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -21,30 +21,54 @@ public class MainContent {
     private org.wayround.coolpassgen.About about_window;
 
     String[][] Strengths = {
-        {"Full Set",
-            "[`~0-9!@#$%^&*()-_=+a-zA-Z[{]}\\|;:'\",<.>/? ]"},
-        {"Full Set without spaces",
-            "[`~0-9!@#$%^&*()-_=+a-zA-Z[{]}\\|;:'\",<.>/?]"},
-        {"base64 and spaces",
-            "[0-9a-zA-Z ]"},
-        {"base64",
-            "[0-9a-zA-Z]"},
-        {"Letters and spaces",
-            "[a-zA-Z ]"},
-        {"Only Letters",
-            "[a-zA-Z]"},
-        {"digits and spaces",
-            "[0-9 ]"},
-        {"digits",
-            "[0-9]"},
-        {"UPPER and spaces",
-            "[A-Z ]"},
-        {"UPPER",
-            "[A-Z]"},
-        {"lower and spaces",
-            "[a-z ]"},
-        {"lower",
-            "[a-z]"}
+        {
+            "Full Set",
+            "[`~0-9!@#$%^&*()-_=+a-zA-Z[{]}\\|;:'\",<.>/? ]"
+        },
+        {
+            "Full Set without spaces",
+            "[`~0-9!@#$%^&*()-_=+a-zA-Z[{]}\\|;:'\",<.>/?]"
+        },
+        {
+            "base64 and spaces",
+            "[0-9a-zA-Z ]"
+        },
+        {
+            "base64",
+            "[0-9a-zA-Z]"
+        },
+        {
+            "Letters and spaces",
+            "[a-zA-Z ]"
+        },
+        {
+            "Only Letters",
+            "[a-zA-Z]"
+        },
+        {
+            "digits and spaces",
+            "[0-9 ]"
+        },
+        {
+            "digits",
+            "[0-9]"
+        },
+        {
+            "UPPER and spaces",
+            "[A-Z ]"
+        },
+        {
+            "UPPER",
+            "[A-Z]"
+        },
+        {
+            "lower and spaces",
+            "[a-z ]"
+        },
+        {
+            "lower",
+            "[a-z]"
+        }
     };
 
     public MainContent(java.awt.Component main_window) {
@@ -94,12 +118,12 @@ public class MainContent {
         jTextArea2.setText(
             "Using this tool, You can create a new random " +
             "password accordingly to desired regular expression"
-            );
+        );
         jTextArea2.setWrapStyleWord(true);
         jTextArea2.setAutoscrolls(false);
         jTextArea2.setBorder(
             javax.swing.BorderFactory.createTitledBorder("Short Info")
-            );
+        );
         jTextArea2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTextArea2.setFocusable(false);
 
@@ -139,7 +163,7 @@ public class MainContent {
         this.p00 = new javax.swing.Box(javax.swing.BoxLayout.Y_AXIS);
         p00.setBorder(
             javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5)
-            );
+        );
 
         javax.swing.Box p01 = new javax.swing.Box(javax.swing.BoxLayout.Y_AXIS);
         javax.swing.Box p02 = new javax.swing.Box(javax.swing.BoxLayout.X_AXIS);
@@ -153,14 +177,14 @@ public class MainContent {
         p01.setBorder(
             javax.swing.BorderFactory.createTitledBorder(
                 "Regular Expression for Acceptable Characters"
-                )
-            );
+            )
+        );
 
         p06.setBorder(
             javax.swing.BorderFactory.createTitledBorder(
                 "Desired Password Strength"
-                )
-            );
+            )
+        );
 
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
@@ -182,8 +206,8 @@ public class MainContent {
         p03.setBorder(
             javax.swing.BorderFactory.createTitledBorder(
                 "Result"
-                )
-            );
+            )
+        );
 
         p00.add(jTextArea2);
         p00.add(p06);
@@ -197,15 +221,15 @@ public class MainContent {
             new java.awt.Dimension(
                 jTextField1.getMaximumSize().width,
                 30
-                )
-            );
+            )
+        );
 
         jTextField1.setMinimumSize(
             new java.awt.Dimension(
                 jTextField1.getMinimumSize().width,
                 30
-                )
-            );
+            )
+        );
 
     }
 
@@ -292,14 +316,14 @@ public class MainContent {
         this.about_window.show(
             this.main_window.getLocation(),
             this.main_window.getSize()
-            );
+        );
     }
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {
         java.awt.datatransfer.Clipboard a =
             java.awt.Toolkit.getDefaultToolkit().getSystemClipboard();
         a.setContents(new java.awt.datatransfer.StringSelection(
-            jTextField2.getText()), null);
+                          jTextField2.getText()), null);
     }
 
 }

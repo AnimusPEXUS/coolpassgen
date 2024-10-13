@@ -10,7 +10,7 @@ public class MainWindow {
     public MainWindow() {
 
         java.awt.Container cont_pane;
-    
+
         this.window = new javax.swing.JFrame();
 
         cont_pane = this.window.getContentPane();
@@ -18,8 +18,8 @@ public class MainWindow {
             new javax.swing.BoxLayout(
                 cont_pane,
                 javax.swing.BoxLayout.Y_AXIS
-                )
-            );
+            )
+        );
 
         this.window.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         this.window.setTitle("Cool Password Generator");
@@ -27,7 +27,7 @@ public class MainWindow {
 
         this.main_content = new org.wayround.coolpassgen.MainContent(
             this.window
-            );
+        );
         this.window.add(this.main_content.getWidget());
 
         this.window.setPreferredSize(new java.awt.Dimension(400, 400));
@@ -61,11 +61,11 @@ public class MainWindow {
 
 
         java.awt.EventQueue.invokeLater(
-            new Runnable() {
-                public void run() {
-                    new MainWindow().show();
-                }
+        new Runnable() {
+            public void run() {
+                new MainWindow().show();
             }
+        }
         );
     }
 
